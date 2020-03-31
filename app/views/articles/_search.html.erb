@@ -1,0 +1,4 @@
+<%= form_tag(search_page_path, :method => "get") do %>
+    <%= search_field_tag :search, params[:search], placeholder: "Keyword" %>
+<%= button_tag "Search",:name => nil%>
+<% end %>
